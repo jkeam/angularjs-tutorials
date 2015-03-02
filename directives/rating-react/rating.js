@@ -5,9 +5,9 @@ var FundooRating = React.createClass({
     var items = [];
     for (var i = 1; i <= this.props.max; i++) {
       var clickHandler = this.props.onRatingSelected && this.props.onRatingSelected.bind(null, i);
-      items.push(<li class={i <= this.props.value && 'filled'} onClick={clickHandler}>{'\u2605'}</li>);
+      items.push(<li className={i <= this.props.value && 'filled'} onClick={clickHandler}>{'\u2605'}</li>);
     }
-    return <ul class="rating">{items}</ul>;
+    return <ul className="rating">{items}</ul>;
   }
 });
 
