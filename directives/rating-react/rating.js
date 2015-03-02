@@ -15,10 +15,10 @@ var FundooDirectiveTutorial = React.createClass({
   getInitialState: function() {
     return {rating: 5};
   },
-  handleRatingSelected: React.autoBind(function(rating) {
+  handleRatingSelected: function(rating) {
     this.setState({rating: rating});
     alert('Rating selected - ' + rating);
-  }),
+  },
   render: function() {
     return (
       <div>
